@@ -1,0 +1,171 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #a79797;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --grisclaro: #dfe9f3;
+    --rosa: #fcdbc8;
+    --rosasecundario: #fcc8aa;
+    --backmain: #d5bfcb;
+}
+
+/* Hack para convertir: 1rem = 10px */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'krub', sans-serif;
+    background-image: linear-gradient(to top, var(--backmain) 0%, var(--backmain) 100%);
+}
+
+.sombra{
+    -webkit-box-shadow: 4px 10px 5px 0px rgba(0,0,0,43);
+    -moz-box-shadow: 4px 10px 5px 0px rgba(0,0,0,43);
+    box-shadow: 4px 10px 5px 0px rgba(0,0,0,43);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+h1{
+    font-size: 3.8rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--rosa);
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--rosasecundario);
+    color: var(--oscuro);
+}
+
+.equipo1{
+    padding: 20px 0 50px 0;
+}
+
+.imagen1{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen1_1{
+    width: 40%;
+}
+
+.imagen2{
+    width: 40%;
+}
+
+.imagen1 .texto1{
+    width: 28%;
+}
+
+.texto1 p{
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.imagen2 .texto2{
+    width: 28%;
+}
+
+.texto2 p{
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.formulario{
+    background-color: var(--blanco);
+    width: min(60rem, 100%); /*Toma el valor mas pequeño ya sea 60rem o 100%*/
+    margin: 0 auto;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--oscuro);
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--oscuro);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    border: .1rem solid var(--rosasecundario);
+}
+
+.enviar .boton_c{
+    width: 50%;
+}
